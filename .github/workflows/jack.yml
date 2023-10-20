@@ -17,7 +17,7 @@ jobs:
           inlineScript: |
             Get-AzResourceGroup -Name "dba_avd_group"
             $subid=$(az account show --query id --output tsv)
-            az role assignment create --assignee "9cdead84-a844-4324-93f2-b2e6bb768d07" --role "Desktop Virtualization Power On Off Contributor" --scope "/subscriptions/$subid"
+            echo $subid
           azPSVersion: "latest"
       - name: Azure CLI script
         uses: azure/CLI@v1
