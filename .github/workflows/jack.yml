@@ -23,4 +23,4 @@ jobs:
       with:
         azPSVersion: '3.1.0'
         inlineScript: |
-          Get-AzVM -ResourceGroupName "ActionsDemo"
+          Get-AzVM -ResourceGroupName "dba_avd_group"
