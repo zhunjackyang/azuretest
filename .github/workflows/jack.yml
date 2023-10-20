@@ -21,5 +21,7 @@ jobs:
         with:
           azcliversion: 2.0.72
           inlineScript: |
+            $resourceGroup="dba_jack_group"
+            $location="East US"
             az account show
-            az storage -h
+            az group create --name $resourceGroup --location $location
